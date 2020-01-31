@@ -9,21 +9,12 @@ pylint = "*"
 pytest = "*"
 
 [packages]
-ipython = "*"
-jupyterlab = "*"
-numpy = "*"
-pandas = "*"
-matplotlib = "*"
-seaborn = "*"
-scikit-learn = "*"
-pyjanitor = "*"
-spacy = "*"
 flask = "*"
 flask-restplus = "*"
 python-dotenv = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8.0"
 
 [pipenv]
 allow_prereleases = true

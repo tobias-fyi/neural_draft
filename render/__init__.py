@@ -2,6 +2,7 @@
 Neural Draft Initializer
 """
 
+import os
 from flask import Flask, jsonify
 from flask_restplus import Resource, Api
 
@@ -12,6 +13,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # === Set config === #
+app_settings = os.getenv("APP_SETTINGS")
 app.config.from_object("render.config.DevelopmentConfig")
 
 
